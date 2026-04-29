@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi aplicación de clima</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg text-light nav1">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">El clima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="/home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/about.html"
+                >About project</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Principales Localidades del Biobío
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/detalles-antuco.html"
+                    >Antuco</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-chiguayante.html"
+                    >Chiguayante</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-concepción.html"
+                    >Concepción</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-coronel.html"
+                    >Coronel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-lebu.html">Lebu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-los-ángeles.html"
+                    >Los Angeles</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-lota.html">Lota</a>
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item"
+                    href="/detalles-san-pedro-de-la-paz.html"
+                    >San Pedro de la Paz</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-santa-juana.html"
+                    >Santa Juana</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-talcahuano.html"
+                    >Talcahuano</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-tomé.html">Tomé</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-yumbel.html"
+                    >Yumbel</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container mt-4">
+        <h1 class="text-center my-4">Detalles de Tomé</h1>
+
+        <div
+          class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4 justify-content-center"
+        >
+          <div class="col col-12 col-md">
+            <div
+              class="card clima-localidad-detalle text-light text-center shadow border-0 rounded-4"
+            >
+              <div class="card-body p-4 d-flex flex-column">
+                <h4 class="fs-5 mb-0">Tomé, Biobio. Chile</h4>
+                <p class="display-3 my-3">
+                  18°C
+                  <img
+                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
+                    class="weather-icon rounded-top-circle"
+                  />
+                </p>
+                <p>Viento: 10 km/h</p>
+                <p>Humedad: 60%</p>
+                <p>Sensación térmica: <strong>14 °C</strong></p>
+                <h5 class="fw-bold">Soleado</h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container mt-5">
+        <div class="card shadow text-black card-weekend-body rounded-5">
+          <div class="card-body">
+            <h3 class="card-title text-center text-white mb-4">
+              Pronóstico Semanal
+            </h3>
+
+            <!-- Fila para los días de la semana -->
+            <div
+              class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 text-center"
+            >
+              <!-- Lunes -->
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Lunes</p>
+                  <p class="icon-cloud-sun">⛅</p>
+                  <p class="small mb-0 mt-2">17° / 11°</p>
+                </div>
+              </div>
+
+              <!-- Martes -->
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Martes</p>
+                  <p class="icon-cloud-sun">⛅</p>
+                  <p class="small mb-0 mt-2">18° / 11°</p>
+                </div>
+              </div>
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Miercoles</p>
+                  <p class="icon-sunny">🌞</p>
+                  <p class="small mb-0 mt-2">19° / 12°</p>
+                </div>
+              </div>
+
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Jueves</p>
+                  <p class="icon-cloud-sun">⛅</p>
+                  <p class="small mb-0 mt-2">18° / 12°</p>
+                </div>
+              </div>
+
+              <div class="col col-12 col-md-6 col-lg-4 card-day">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Viernes</p>
+                  <p class="icon-sunny w-100">🌞</p>
+                  <p class="small mb-0 mt-2">22° / 16°</p>
+                </div>
+              </div>
+
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Sábado</p>
+                  <p class="icon-sunny">🌞</p>
+                  <p class="small mb-0 mt-2">21° / 16°</p>
+                </div>
+              </div>
+
+              <div class="col col-12 col-md-6 col-lg-4">
+                <div class="p-2 border rounded bg-white text-dark h-100">
+                  <p class="fw-bold mb-1">Domingo</p>
+                  <p class="icon-cloud">☁️</p>
+                  <p class="small mb-0 mt-2">14° / 10°</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="row-cols-auto">
+      <footer class="text-white bg-end text-center py-3 mt-4 mb-md-0 mt-3">
+        <h6>Bienvenido a mi aplicación del clima!</h6>
+        <p>
+          En esta app podrás encontrar información detallada sobre el clima en
+          diferentes localidades de la región del Biobío.
+        </p>
+        <p>
+          Podrás encontrar 12 de las principales localidades con información del
+          día y su pronóstico semanal. Ingresando a cada localidad podrás
+          encontrar información detallada del clima, como temperatura, viento,
+          humedad y sensación térmica.
+        </p>
+        <p>
+          &copy; 2026. Mi Aplicación del Clima. Todos los derechos Reservados.
+        </p>
+        <p>Si tienes dudas o consultas no dudes en contactarnos.</p>
+        <button id="subir" class="text-bg-light rounded-3 m-2 mt-1">
+          Subir
+        </button>
+      </footer>
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

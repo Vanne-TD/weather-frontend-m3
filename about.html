@@ -1,0 +1,187 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi aplicación de clima</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+
+  <body>
+    <nav class="navbar navbar-expand-lg text-light nav1">
+      <div class="container-fluid">
+        <a class="navbar-brand text-white fw-bold" href="#">El clima</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active text-white"
+                aria-current="page"
+                href="/home.html"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="/about.html"
+                >About project</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Principales Localidades del Biobío
+              </a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a class="dropdown-item" href="/detalles-antuco.html"
+                    >Antuco</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-chiguayante.html"
+                    >Chiguayante</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-concepción.html"
+                    >Concepción</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-coronel.html"
+                    >Coronel</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-lebu.html">Lebu</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-los-ángeles.html"
+                    >Los Angeles</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-lota.html">Lota</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-san-pedro-de-la-paz.html"
+                    >San Pedro de la Paz</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-santa-juana.html"
+                    >Santa Juana</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-talcahuano.html"
+                    >Talcahuano</a
+                  >
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-tomé.html">Tomé</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="/detalles-yumbel.html"
+                    >Yumbel</a
+                  >
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <div class="container my-5">
+        <div class="row align-items-center">
+          <div class="col-12 col-md-4 text-center mb-4 mb-md-0">
+            <img
+              src="/assets/img/iconos-clima-nublado-lluvioso-soleado.png"
+              class="img-fluid rounded-circle shadow"
+              alt="Mi foto"
+            />
+          </div>
+
+          <div class="col-12 col-md-8 justify-content-around">
+            <section>
+              <h1 class="text-center">Sobre esta aplicación</h1>
+
+              <p class="m-2">
+                Esta es una aplicación o página web que te proporcionará
+                infomacion sobre el clima del día y de la semana de 12 de las
+                principales localidades del Biobío.
+              </p>
+
+              <p class="m-2">
+                Esta proyecto fue desarrollado por Vanessa Torres, como parte de
+                un pre-portafolio del Bootcamp de Frontend de Talento Digital
+                para Chile.
+              </p>
+              <p class="m-2">
+                El objetivo en mente de la aplicación es darle a los usuarios
+                información precisa y actualizada sobre el clima en las
+                localidades seleccionadas centradas inicialemnete en la región
+                del Biobío, permitiéndoles planificar sus actividades diarias y
+                semanales de manera más eficiente.
+              </p>
+              <p class="m-2">
+                Espero que disfruten de la aplicación una vez que pueda estar
+                ligada a una API y así consultar por tu clima de forma rápida y
+                sencilla!
+              </p>
+            </section>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="text-white bg-end text-center py-3 mt-4 mb-md-0">
+      <h6>Bienvenido a mi aplicación del clima!</h6>
+      <p>
+          En esta app podrás encontrar información detallada sobre el clima en
+          diferentes localidades de la región del Biobío.
+        </p>
+        <p>
+          Podrás encontrar 12 de las principales localidades con información del
+          día y su pronóstico semanal. Ingresando a cada localidad podrás
+          encontrar información detallada del clima, como temperatura, viento,
+          humedad y sensación térmica.
+        </p>
+      <p>
+        &copy; 2026. Mi Aplicación del Clima. Todos los derechos Reservados.
+      </p>
+      <p>Si tienes dudas o consultas no dudes en contactarnos.</p>
+      <button id="subir" class="text-bg-light rounded-3 m-2 mt-1">Subir</button>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/assets/js/script.js"></script>
+  </body>
+</html>

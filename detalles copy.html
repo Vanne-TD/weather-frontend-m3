@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioClima | Detalles de Localidad</title>
+    <link href="https://jsdelivr.net" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="weather-app">
+
+    <header class="l-header sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand fw-bold" href="home.html">🌤️ El Clima</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">About project</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="l-main container my-5">
+        <section class="l-main__header text-center mb-5">
+            <h1 class="display-4 fw-bold">Pronóstico Detallado</h1>
+        </section>
+
+        <!-- TARJETA PRINCIPAL -->
+        <div class="row justify-content-center mb-5">
+            <div class="col-12 col-md-8 col-lg-4">
+                <article class="c-detail-card card text-white text-center p-4 shadow border-0">
+                    <div class="c-detail-card__body">
+                        <h2 class="h4 mb-0">Localidad Seleccionada</h2>
+                        <p class="display-2 my-3">18°C</p>
+                        <img src="https://flaticon.com" class="c-detail-card__icon mb-3" width="80" alt="Clima actual">
+                        <div class="c-detail-card__stats mt-3">
+                            <p class="mb-1">Viento: <strong>10 km/h</strong></p>
+                            <p class="mb-1">Humedad: <strong>60%</strong></p>
+                            <p class="mb-0">Sensación: <strong>14 °C</strong></p>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+        <!-- PRONÓSTICO SEMANAL COMPLETO -->
+        <section class="c-weekly-forecast p-4 rounded-5 shadow">
+            <h3 class="text-center text-white mb-4">Pronóstico de la Semana</h3>
+            <div class="row g-3 justify-content-center">
+                <!-- Lunes -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Lun</p>
+                        <span class="fs-3">⛅</span>
+                        <p class="small mb-0 mt-2">17°/11°</p>
+                    </div>
+                </div>
+                <!-- Martes -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Mar</p>
+                        <span class="fs-3">⛅</span>
+                        <p class="small mb-0 mt-2">18°/11°</p>
+                    </div>
+                </div>
+                <!-- Miércoles -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Mié</p>
+                        <span class="fs-3">🌞</span>
+                        <p class="small mb-0 mt-2">19°/12°</p>
+                    </div>
+                </div>
+                <!-- Jueves -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Jue</p>
+                        <span class="fs-3">⛅</span>
+                        <p class="small mb-0 mt-2">18°/12°</p>
+                    </div>
+                </div>
+                <!-- Viernes -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Vie</p>
+                        <span class="fs-3">🌞</span>
+                        <p class="small mb-0 mt-2">22°/16°</p>
+                    </div>
+                </div>
+                <!-- Sábado -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Sáb</p>
+                        <span class="fs-3">🌞</span>
+                        <p class="small mb-0 mt-2">21°/16°</p>
+                    </div>
+                </div>
+                <!-- Domingo -->
+                <div class="col-6 col-md-4 col-lg-1">
+                    <div class="c-weekly-forecast__day p-2 rounded text-center bg-white">
+                        <p class="fw-bold mb-1 small">Dom</p>
+                        <span class="fs-3">☁️</span>
+                        <p class="small mb-0 mt-2">14°/10°</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="l-footer bg-dark text-white py-4 mt-5 text-center">
+        <p class="mb-0">&copy; 2026 Vanessa Torres | BioClima App</p>
+    </footer>
+
+    <script src="https://jsdelivr.net"></script>
+</body>
+</html>
