@@ -1,436 +1,329 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Mi aplicación de clima</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="assets/css/style.css" />
-  </head>
+<html lang="es">
 
-  <body>
-    <header></header>
-    <nav class="navbar navbar-expand-lg text-light nav1">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mi aplicación de clima</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+
+  <!-- Encabezado principal -->
+  <header class="l-header sticky-top shadow-sm">
+    <nav class="navbar l-header__nav navbar-expand-lg text-light">
       <div class="container-fluid">
-        <a class="navbar-brand text-white fw-bold" href="/home.html"
-          >El clima</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+        <a class="navbar-brand fw-bold" href="home.html">🌤️ El Clima</a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNavDropdown">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link active text-white"
-                aria-current="page"
-                href="/home.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="/about.html"
-                >About project</a
-              >
-            </li>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a class="nav-link active" href="home.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About project</a></li>
+
             <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle text-white"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Principales Localidades del Biobío
-              </a>
-              <ul class="dropdown-menu">
-                <li>
-                  <a class="dropdown-item" href="/detalles-antuco.html"
-                    >Antuco</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-chiguayante.html"
-                    >Chiguayante</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-concepción.html"
-                    >Concepción</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-coronel.html"
-                    >Coronel</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-lebu.html">Lebu</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-losangeles.html"
-                    >Los Angeles</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-lota.html">Lota</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-sanpedro.html"
-                    >San Pedro de la Paz</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-santajuana.html"
-                    >Santa Juana</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-talcahuano.html"
-                    >Talcahuano</a
-                  >
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-tomé.html">Tomé</a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="/detalles-yumbel.html"
-                    >Yumbel</a
-                  >
-                </li>
+              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Localidades Biobío</a>
+
+              <ul class="dropdown-menu dropdown-menu-end">
+                <li><a class="dropdown-item" href="detalle.html">Antuco</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Chiguayante</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Concepción</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Coronel</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Lebu</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Los Ángeles</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Lota</a></li>
+                <li><a class="dropdown-item" href="detalle.html">San Pedro de la Paz</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Santa Juana</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Talcahuano</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Tomé</a></li>
+                <li><a class="dropdown-item" href="detalle.html">Yumbel</a></li>
               </ul>
+
             </li>
           </ul>
         </div>
       </div>
     </nav>
+  </header>
 
-    <main>
-      <div class="container mt-4">
-        <div class="row g-4 justify-content-center">
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Tomé, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  18°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon rounded-top-circle"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>14 °C</strong></p>
-                <h5 class="fw-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a
-                    href="/detalles-tomé.html"
-                    class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
 
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Talcahuano, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  18°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon rounded-top-circle"
-                  />
-                </p>
+<main class="l-main container my-5">
+    
+  <header class="text-center mb-5">
+    <h1 class="display-4 fw-bold">Clima en la Región del Biobío</h1>
+    <p class="lead text-muted">Información actualizada de las principales comunas</p>
+  </header>
 
-                <p>Sensación térmica: <strong>15°C</strong></p>
-                <h5 class="fw-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a
-                    href="/detalles-talcahuano.html"
-                    class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
+  <section class="weather-section">
+    <div class="row g-4 justify-content-center">
+
+      <!-- 1. Yumbel -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Yumbel</h2>
+            <p class="weather-card__temp-display my-3">
+              20°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">18°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
             </div>
           </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Concepción, Biobio. Tomé</h4>
-                <p class="display-3 my-3">
-                  21°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>19 °C</strong></p>
-                <h5 class="fw-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-concepción.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">San Pedro de la Paz, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  18°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>17°C</strong></p>
-                <h5 class="fw-bold text-dark mt-2">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-san-pedro-de-la-paz.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Chiguayante, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  19°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>17°C</strong></p>
-                <h5 class="fw-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-chiguayante.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Yumbel, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  20°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica <strong>18 °C</strong></p>
-                <h5 class="fw-bold text-dark mt-2">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-yumbel.html" class="btn btn-detalles text-white w-50 h-100"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Coronel, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  18°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>17 °C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-coronel.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Santa Juana, Biobío. Chile</h4>
-                <p class="display-3 my-3">
-                  27°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong> 23°C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-santa-juana.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Lota, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  21°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>22 °C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-lota.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Antuco, Biobio. Chile</h4>
-                <p class="display-3 my-3">
-                  18°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>2 °C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-antuco.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Los Ángeles, Biobío. Chile</h4>
-                <p class="display-3 my-3">
-                  28°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>27 °C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-los-ángeles.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col col-12 col-md-6 col-lg-3">
-            <div
-              class="card h-100 clima-localidad text-light text-center shadow border-0"
-            >
-              <div class="card-body p-4 d-flex flex-column">
-                <h4 class="mb-0">Lebu, Biobío. Tomé</h4>
-                <p class="display-3 my-3">
-                  25°C
-                  <img
-                    src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png"
-                    class="weather-icon"
-                  />
-                </p>
-                <p>Sensación térmica: <strong>23 °C</strong></p>
-                <h5 class="fw-light-bold text-dark">Soleado</h5>
-                <div class="mt-auto pt-3">
-                  <a href="/detalles-lebu.html" class="btn btn-detalles text-white w-50"
-                    >Ver más</a
-                  >
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        </article>
       </div>
-    </main>
 
-    <footer class="text-white bg-end text-center py-3 mt-4 mb-md-0">
-      <h6>Bienvenido a mi aplicación del clima!</h6>
-      <p>
-          En esta app podrás encontrar información detallada sobre el clima en
-          diferentes localidades de la región del Biobío.
-        </p>
-        <p>
-          Podrás encontrar 12 de las principales localidades con información del
-          día y su pronóstico semanal. Ingresando a cada localidad podrás
-          encontrar información detallada del clima, como temperatura, viento,
-          humedad y sensación térmica.
-        </p>
-      <p>
-        &copy; 2026. Mi Aplicación del Clima. Todos los derechos Reservados.
-      </p>
-      <p>Si tienes dudas o consultas no dudes en contactarnos.</p>
-      <button id="subir" class="text-bg-light rounded-3 m-2 mt-1">Subir</button>
-    </footer>
+      <!-- 2. Los Ángeles -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Los Ángeles</h2>
+            <p class="weather-card__temp-display my-3">
+              23°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima despejado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">22°C</strong></p>
+            <p class="h5 fw-bold text-dark">Despejado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
 
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-      crossorigin="anonymous"
-    ></script>
-    <script src="/assets/js/script.js"></script>
-  </body>
+      <!-- 3. Santa Juana -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Santa Juana</h2>
+            <p class="weather-card__temp-display my-3">
+              22°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">21°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 4. Concepción -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Concepción</h2>
+            <p class="weather-card__temp-display my-3">
+              21°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">19°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 5. Chiguayante -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Chiguayante</h2>
+            <p class="weather-card__temp-display my-3">
+              19°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">17°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 6. San Pedro de la Paz -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">San Pedro de la Paz</h2>
+            <p class="weather-card__temp-display my-3">
+              18°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">17°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 7. Talcahuano -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Talcahuano</h2>
+            <p class="weather-card__temp-display my-3">
+              18°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">15°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 8. Tomé -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Tomé</h2>
+            <p class="weather-card__temp-display my-3">
+              18°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon weather-card__icon--rounded">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">14°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 9. Lota -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Lota</h2>
+            <p class="weather-card__temp-display my-3">
+              17°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima soleado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">15°C</strong></p>
+            <p class="h5 fw-bold text-dark">Soleado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 10. Coronel -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Coronel</h2>
+            <p class="weather-card__temp-display my-3">
+              17°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima parcialmente nublado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">15°C</strong></p>
+            <p class="h5 fw-bold text-dark">Parcial</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 11. Lebu -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Lebu</h2>
+            <p class="weather-card__temp-display my-3">
+              15°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima ventoso" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">13°C</strong></p>
+            <p class="h5 fw-bold text-dark">Viento</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+      <!-- 12. Antuco -->
+      <div class="col-12 col-md-6 col-lg-3">
+        <article class="card h-100 weather-card weather-card--bg text-light text-center shadow-sm">
+          <div class="card-body p-4 d-flex flex-column">
+            <h2 class="h4 mb-0">Antuco</h2>
+            <p class="weather-card__temp-display my-3">
+              12°C 
+              <img src="https://cdn-icons-png.flaticon.com/512/4814/4814268.png" alt="Icono de clima despejado" class="weather-card__icon">
+            </p>
+            <p>Sensación: <strong class="weather-card__temp">10°C</strong></p>
+            <p class="h5 fw-bold text-dark">Despejado</p>
+            <div class="mt-auto pt-3">
+              <a href="detalles.html" class="btn weather-card__button text-white w-75">Ver más</a>
+            </div>
+          </div>
+        </article>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+
+
+  <!-- Footer -->
+<footer class="l-footer footer">
+  <div class="container">
+    <div class="row gy-4 align-items-center">
+
+      <!-- Logo + descripción -->
+      <div class="col-12 col-md-4 text-center text-md-start">
+        <span class="footer__logo">🌤️ El Clima Biobío</span>
+        <p class="footer__description mt-2">
+          Información meteorológica precisa para la Región del Biobío.
+        </p>
+      </div>
+
+      <!-- Navegación -->
+      <div class="col-12 col-md-4 text-center">
+        <nav class="footer__nav" aria-label="Enlaces del pie de página">
+          <ul class="list-unstyled d-flex justify-content-center gap-3 mb-0">
+            <li><a href="home.html" class="footer__link">Inicio</a></li>
+            <li><a href="about.html" class="footer__link">Proyecto</a></li>
+            <li><a href="contacto.html" class="footer__link">Contacto</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Derechos -->
+      <div class="col-12 col-md-4 text-center text-md-end">
+        <p class="footer__copyright mb-0">
+          &copy; 2026 El Clima Biobío<br>
+          <small>Diseñado con HTML Semántico, BEM y Bootstrap.</small>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/js/script.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
 </html>

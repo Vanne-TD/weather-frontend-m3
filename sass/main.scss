@@ -1,0 +1,104 @@
+/* ==========================================================================
+   1. VARIABLES (Base) @use ./sass/abstracts/variables.scss as *;
+   ========================================================================== */
+
+   :root {
+    --color-bg-body: rgb(228, 207, 249);
+    --color-nav: rgb(143, 70, 216);
+    --color-footer: rgb(212, 179, 245);
+    --color-btn: #8a11c6fa;
+    --color-detalle-dark: rgb(97, 0, 139);
+    --color-semanal: rgb(48, 10, 76);
+    --white: rgb(255, 255, 255);
+}
+
+/* ==========================================================================
+   2. LAYOUT (Estructura Global l-)
+   ========================================================================== */
+body {
+    background-color: var(--color-bg-body);
+    font-family: Arial, sans-serif;
+}
+
+.l-header .navegation {
+    background-color:rgb(143, 70, 216);
+}
+
+.l-footer {
+    background-color: var(--color-footer);
+}
+
+/* ==========================================================================
+   3. COMPONENTES (c-)
+   ========================================================================== */
+
+/* Tarjetas del Home (Anterior .clima-localidad) */
+.c-place-card {
+    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.197)), 
+                url('/assets/img/cielo-azul-fondo-clima-nubes_261642-70.avif');
+    background-size: cover;
+    background-position: center;
+    opacity: 0.85;
+    border: none;
+    border-radius: 20px;
+    color: var(--white);
+}
+
+.c-place-card__temp {
+    font-weight: bold;
+}
+
+.c-place-card__icon {
+    width: 60px;
+    height: auto;
+}
+
+.c-place-card__btn {
+    background-color: var(--color-btn);
+    border: 1px solid var(--white);
+    font-style: italic;
+    color: var(--white);
+}
+
+/* Tarjeta Principal de Detalle (Anterior .clima-localidad-detalle) */
+.c-detail-card {
+    background-color: var(--color-detalle-dark);
+    outline: 5px solid var(--white);
+    opacity: 0.8;
+    border-radius: 1rem;
+}
+
+/* Pronóstico Semanal (Anterior .card-weekend-body) */
+.c-weekly-forecast {
+    background-color: var(--color-semanal);
+    outline: 2px solid var(--white);
+}
+
+.c-weekly-forecast__day {
+    background-color: var(--white);
+    color: var(--color-semanal);
+    border-radius: 10px;
+}
+
+.c-weekly-forecast__day span { /* Iconos soleado/nube */
+    font-size: 30px;
+    display: block;
+}
+
+/* Estilos para About */
+.c-about-text {
+    line-height: 1.6;
+}
+
+figure img {
+    border: 5px solid var(--white);
+    transition: transform 0.3s;
+}
+
+figure img:hover {
+    transform: scale(1.02);
+}
+
+/* ==========================================================================
+   4. UTILITIES (u-)
+   ========================================================================== */
