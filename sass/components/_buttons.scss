@@ -1,0 +1,32 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+@use "sass:color";
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-sm $spacing-md;
+  border-radius: $radius-sm;
+  font-weight: 600;
+  transition: transform 0.25s ease, background-color 0.25s ease;
+}
+
+.btn--primary {
+  background-color: $color-accent;
+  color: $color-white;
+}
+
+.btn--primary:hover {
+  transform: translateY(-1px);
+  background-color: color.adjust($color-accent, $lightness: -8%);
+}
+.btn--secondary {
+  background-color: $color-panel;
+  color: $color-white;
+}
+
+.btn--secondary:hover {
+  transform: translateY(-1px);
+  background-color: color.adjust($color-panel, $lightness: -8%);
+}
