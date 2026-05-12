@@ -1,0 +1,9 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+
+.weather-card-detail {
+    @include card-surface(var(--color-panel-soft, rgba(97, 0, 139, 0.85)), var(--radius-base, 1rem));
+    outline: 5px solid var(--color-white, #fff);
+    color: var(--color-white, white);
+}

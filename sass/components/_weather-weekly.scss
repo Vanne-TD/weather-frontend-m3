@@ -1,0 +1,24 @@
+﻿@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+.weather-weekly {
+    @include card-surface(var(--color-panel-alt, #300a4c), 2rem, none);
+    outline: 2px solid var(--color-white, #fff);
+
+    &__day {
+        @include card-surface(
+            var(--color-white, #fff),
+            10px,
+            var(--box-shadow-light, 0 2px 8px rgba(0, 0, 0, 0.1))
+        );
+        color: var(--color-panel-alt, #300a4c);
+        padding: 1rem;
+
+        span {
+            font-size: 30px;
+            display: block;
+            margin: 10px 0;
+            font-weight: var(--font-weight-bold, 700);
+        }
+    }
+}
