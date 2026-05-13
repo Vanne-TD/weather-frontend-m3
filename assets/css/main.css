@@ -41,6 +41,64 @@ p {
   color: #3a2b4d;
 }
 
+.btn-ayuda {
+  position: fixed;
+  bottom: 1rem;
+  left: 1rem;
+  background: #2c1237;
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 9999px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-family: "Inter", "Arial", sans-serif;
+  z-index: 999;
+  transition: transform 0.2s ease;
+}
+.btn-ayuda:hover {
+  transform: scale(1.1);
+}
+
+.cerrar-ayuda {
+  margin-top: 0.5rem;
+  background: rgba(138, 17, 198, 0.85);
+  color: #ffffff;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.6rem;
+  cursor: pointer;
+  font-family: "Inter", "Arial", sans-serif;
+}
+
+.panel-ayuda {
+  position: fixed;
+  bottom: 2.5rem;
+  left: 1rem;
+  background: rgba(138, 17, 198, 0.85);
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  width: 260px;
+  z-index: 998;
+  color: #f3e8ff;
+  backdrop-filter: blur(6px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  /* Estado inicial: oculto pero animable */
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  transform: translateY(20px);
+  transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s ease;
+}
+.panel-ayuda.is-visible {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .weather-weekly {
   background-color: var(--color-panel-alt, #300a4c);
   border-radius: 2rem;
