@@ -54,7 +54,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", "Arial", sans-serif;
-  color: #1d032a;
+  color: #12021a;
   line-height: 1.1;
 }
 
@@ -281,7 +281,7 @@ p {
   --color-background: #e4cff9;
   --color-panel: #2c1237;
   --color-panel-alt: #340854;
-  --color-panel-dark: #21043b;
+  --color-panel-dark: #170221;
   --color-panel-soft: rgba(121, 43, 162, 0.8509803922);
   --color-accent: #8a11c6;
   --color-white: #ffffff;
