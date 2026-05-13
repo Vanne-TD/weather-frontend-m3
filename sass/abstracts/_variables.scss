@@ -36,11 +36,6 @@ $bg-panel: $color-panel;
 $bg-dark: $color-panel-dark;
 
 
-// Espavios (padding)
-$space-1:10px;
-$space-2:20px;
-$space-3:30px;
-
 
 $radius-base: 1rem;
 $radius-sm: 0.6rem;
@@ -57,12 +52,16 @@ $border-radius-sm: 4px;
 $border-radius-md: 8px;
 $border-radius-lg: 12px;
 
-// Espaciados
-$spacing-xs: 0.5rem;
-$spacing-sm: 1rem;
-$spacing-md: 1.5rem;
-$spacing-lg: 2.5rem;
-$spacing-xl: 3rem;
+// Espaciados (margenes y padding)
+$spacing-xs: 4px;
+$spacing-sm: 8px;
+$spacing-md: 16px;
+$spacing-lg: 24px;
+$spacing-xl: 48px;
+
+$space-1:10px;
+$space-2:20px;
+$space-3:30px;
 
 $breakpoint-sm: 540px;
 $breakpoint-md: 768px;
