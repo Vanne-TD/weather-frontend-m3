@@ -37,7 +37,7 @@ h4,
 h5,
 h6 {
   font-family: "Poppins", "Arial", sans-serif;
-  color: #21043b;
+  color: #35064f;
   line-height: 1.1;
 }
 
@@ -68,7 +68,7 @@ p {
 
 .cerrar-ayuda {
   margin-top: 4px;
-  background: rgba(138, 17, 198, 0.85);
+  background: rgba(165, 91, 204, 0.8509803922);
   color: #ffffff;
   border: none;
   padding: 4px 8px;
@@ -81,7 +81,7 @@ p {
   position: fixed;
   bottom: 24px;
   left: 8px;
-  background: rgba(138, 17, 198, 0.85);
+  background: rgba(165, 91, 204, 0.8509803922);
   padding: 16px;
   border-radius: 1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
@@ -137,7 +137,7 @@ p {
   opacity: 0.85;
 }
 .weather-card__button {
-  background-color: var(--color-panel-soft, rgba(68, 3, 101, 0.85));
+  background-color: var(--color-panel-alt, #560985);
   border: 1px solid rgb(242, 231, 240);
   font-style: italic;
   position: relative;
@@ -205,7 +205,7 @@ p {
   transition: color 0.3s ease;
 }
 .l-footer__link:hover {
-  color: rgba(138, 17, 198, 0.85);
+  color: rgba(165, 91, 204, 0.8509803922);
   text-shadow: 0 0 6px rgba(255, 255, 255, 0.7);
 }
 
@@ -251,14 +251,14 @@ p {
 }
 
 :root {
-  --color-background: #1a0f24;
+  --color-background: #e4cff9;
   --color-panel: #2c1237;
-  --color-panel-alt: #300a4c;
-  --color-panel-dark: #21043b;
-  --color-panel-soft: rgba(138, 17, 198, 0.85);
+  --color-panel-alt: #560985;
+  --color-panel-dark: #35064f;
+  --color-panel-soft: rgba(165, 91, 204, 0.8509803922);
   --color-accent: #8a11c6;
   --color-white: #ffffff;
-  --color-text: #f3e8ff;
+  --color-text: #3a2b4d;
   --color-text-soft: #f3e8ff;
   --color-border: rgba(255, 255, 255, 0.2);
   --box-shadow-light: 0 2px 8px rgba(0, 0, 0, 0.1);
