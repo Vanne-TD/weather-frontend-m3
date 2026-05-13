@@ -19,9 +19,9 @@ $font-weight-extra-bold: 900;
 
 $color-background: #e4cff9;
 $color-panel: #2c1237;
-$color-panel-soft: #a55bccd9;
-$color-panel-alt: #560985;
-$color-panel-dark: #35064f;
+$color-panel-soft: #642387d9;
+$color-panel-alt: #3d0a5b;
+$color-panel-dark: rgb(29, 3, 42);
 $color-white: #ffffff;
 $color-text: #3a2b4d;
 $color-text-soft: #f3e8ff;
@@ -53,12 +53,14 @@ $border-radius-md: 8px;
 $border-radius-lg: 12px;
 
 // Espaciados (margenes y padding)
+// (xs, sm, md, lg, xl, basados en una escala modular)
 $spacing-xs: 4px;
 $spacing-sm: 8px;
 $spacing-md: 16px;
 $spacing-lg: 24px;
 $spacing-xl: 48px;
 
+// Basados en una escala de 10px para facilitar cálculos y consistencia
 $space-1:10px;
 $space-2:20px;
 $space-3:30px;

@@ -1,3 +1,5 @@
+@use "../abstracts/variables" as *;
+
 @mixin responsive-type($min, $preferred, $max) {
   font-size: clamp($min, $preferred, $max);
 }
@@ -6,6 +8,7 @@
   background-color: $bg;
   border-radius: $radius;
   box-shadow: $shadow;
+  padding: $spacing-sm;
 }
 
 @mixin section-spacing($top: $spacing-xl, $bottom: $spacing-xl) {

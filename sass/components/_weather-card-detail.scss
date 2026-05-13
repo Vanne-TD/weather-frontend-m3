@@ -3,7 +3,10 @@
 
 
 .weather-card-detail {
-    @include card-surface(var(--color-panel-soft, rgba(97, 0, 139, 0.85)), var(--radius-base, 1rem));
+    @include card-surface(var(--color-panel-soft, #642387d9), var(--radius-base, 1rem));
+    @include center-flex; 
     outline: 5px solid var(--color-white, #fff);
-    color: var(--color-white, white);
+    &__content {
+        text-align: center;  
+    }
 }
